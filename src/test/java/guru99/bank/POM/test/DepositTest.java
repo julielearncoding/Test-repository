@@ -64,7 +64,7 @@ public class DepositTest {
 
 	@After
 	public void afterTest() {
-		driver.quit();
+		// driver.quit();
 	}
 
 }

@@ -44,7 +44,7 @@ public class CreateNewCustomerTest {
 	@DataProvider
 	public static Object[][] customerDetails() {
 		return new Object[][] { { "customerName", "female", "01/01/1984", "address", "city", "state", "123456",
-				"0909123456", "tinklebell14@gmail.com", "123456" } };
+				"0909123456", "tinklebell15@gmail.com", "123456" } };
 	}
 
 	@Test()

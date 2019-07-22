@@ -28,19 +28,19 @@ public class DepositRegSuccessfullyPage {
 	}
 
 	public String getAmountCredited() {
-		return getData(8, 2);
+		return getData(12, 2);
 	}
 
 	public String getTypeOfTransaction() {
-		return getData(9, 2);
+		return getData(16, 2);
 	}
 
 	public String getDescription() {
-		return getData(10, 2);
+		return getData(20, 2);
 	}
 
 	public String getCurrentBalance() {
-		return getData(11, 2);
+		return getData(23, 2);
 	}
 
 	public String[] getRegisteredDepositDetails() {

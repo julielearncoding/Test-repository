@@ -60,6 +60,7 @@ public class CreateNewAccountTest {
 				AccountRegSuccessfullyPage.class);
 		System.out.println(accountSuccessful.getSuccessfulMessage());
 		System.out.println(Arrays.toString(accountSuccessful.getRegisteredAccountDetails()));
+
 	}
 
 	@After
