@@ -43,9 +43,14 @@ public class DepositRegSuccessfullyPage {
 		return getData(11, 2);
 	}
 
-	public Object[][] getRegisteredDepositDetails() {
-		Object[][] data = null;
-
+	public String[] getRegisteredDepositDetails() {
+		String[] data = new String[6];
+		data[0] = this.getTransactionId();
+		data[1] = this.getAccountNo();
+		data[2] = this.getAmountCredited();
+		data[3] = this.getTypeOfTransaction();
+		data[4] = this.getDescription();
+		data[5] = this.getCurrentBalance();
 		return data;
 	}
 

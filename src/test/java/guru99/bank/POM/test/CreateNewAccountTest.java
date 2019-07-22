@@ -1,5 +1,8 @@
 package guru99.bank.POM.test;
 
+import java.util.Arrays;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +15,7 @@ import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
 
 import guru99.bank.POM.pages.AccountPage;
+import guru99.bank.POM.pages.AccountRegSuccessfullyPage;
 import guru99.bank.POM.pages.LoginPage;
 import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -52,7 +56,14 @@ public class CreateNewAccountTest {
 		AccountPage accountPage = PageFactory.initElements(driver, AccountPage.class);
 		accountPage.createNewAccount(customerId, accountType, initialDeposit);
 
-		System.out.println(driver.getCurrentUrl());
+		AccountRegSuccessfullyPage accountSuccessful = PageFactory.initElements(driver,
+				AccountRegSuccessfullyPage.class);
+		System.out.println(accountSuccessful.getSuccessfulMessage());
+		System.out.println(Arrays.toString(accountSuccessful.getRegisteredAccountDetails()));
 	}
 
+	@After
+	public void afterTest() {
+		driver.quit();
+	}
 }

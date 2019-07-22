@@ -1,5 +1,8 @@
 package guru99.bank.POM.test;
 
+import java.util.Arrays;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +15,7 @@ import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
 
 import guru99.bank.POM.pages.DepositPage;
+import guru99.bank.POM.pages.DepositRegSuccessfullyPage;
 import guru99.bank.POM.pages.LoginPage;
 import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -51,6 +55,16 @@ public class DepositTest {
 
 		DepositPage depositPage = PageFactory.initElements(driver, DepositPage.class);
 		depositPage.depositToAccount(accountNumber, amount, description);
+
+		DepositRegSuccessfullyPage depositSuccessful = PageFactory.initElements(driver,
+				DepositRegSuccessfullyPage.class);
+		System.out.println(depositSuccessful.getSuccessfulMessage());
+		System.out.println(Arrays.toString(depositSuccessful.getRegisteredDepositDetails()));
+	}
+
+	@After
+	public void afterTest() {
+		driver.quit();
 	}
 
 }

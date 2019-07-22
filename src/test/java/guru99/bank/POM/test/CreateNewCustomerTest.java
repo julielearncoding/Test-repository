@@ -1,5 +1,8 @@
 package guru99.bank.POM.test;
 
+import java.util.Arrays;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,9 +12,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
+import com.tngtech.java.junit.dataprovider.UseDataProvider;
 
+import guru99.bank.POM.pages.CustomerPage;
 import guru99.bank.POM.pages.CustomerRegSuccessfullyPage;
 import guru99.bank.POM.pages.LoginPage;
+import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @RunWith(DataProviderRunner.class)
@@ -38,37 +44,31 @@ public class CreateNewCustomerTest {
 	@DataProvider
 	public static Object[][] customerDetails() {
 		return new Object[][] { { "customerName", "female", "01/01/1984", "address", "city", "state", "123456",
-				"0909123456", "tinklebell12@gmail.com", "123456" } };
+				"0909123456", "tinklebell14@gmail.com", "123456" } };
 	}
 
-//	@Test()
-//	@UseDataProvider("customerDetails")
-//	public void createNewCustomer(String customerName, String gender, String dateOfBirth, String address, String city,
-//			String state, String pinNumber, String mobileNumber, String email, String password) {
-//
-//		// Navigate to Customer page
-//		NavigationPage nav = PageFactory.initElements(driver, NavigationPage.class);
-//		nav.navigateTo("New Customer");
-//
-//		CustomerPage customerPage = PageFactory.initElements(driver, CustomerPage.class);
-//		customerPage.submitCustomerDetails(customerName, gender, dateOfBirth, address, city, state, pinNumber,
-//				mobileNumber, email, password);
-//
-//		CustomerRegSuccessfullyPage customerSuccessful = PageFactory.initElements(driver,
-//				CustomerRegSuccessfullyPage.class);
-//		System.out.println(customerSuccessful.getSuccessfulMessage());
-//	}
-
 	@Test()
+	@UseDataProvider("customerDetails")
+	public void createNewCustomer(String customerName, String gender, String dateOfBirth, String address, String city,
+			String state, String pinNumber, String mobileNumber, String email, String password) {
 
-	public void verifyRegisteredCustomer() {
+		// Navigate to Customer page
+		NavigationPage nav = PageFactory.initElements(driver, NavigationPage.class);
+		nav.navigateTo("New Customer");
 
-		driver.get("http://demo.guru99.com/v4/manager/CustomerRegMsg.php?cid=29397");
+		CustomerPage customerPage = PageFactory.initElements(driver, CustomerPage.class);
+		customerPage.submitCustomerDetails(customerName, gender, dateOfBirth, address, city, state, pinNumber,
+				mobileNumber, email, password);
 
 		CustomerRegSuccessfullyPage customerSuccessful = PageFactory.initElements(driver,
 				CustomerRegSuccessfullyPage.class);
+
 		System.out.println(customerSuccessful.getSuccessfulMessage());
-		System.out.println(customerSuccessful.getCustomerId());
-		System.out.println(customerSuccessful.getRegisteredCustomerDetails());
+		System.out.println(Arrays.toString(customerSuccessful.getRegisteredCustomerDetails()));
+	}
+
+	@After
+	public void afterTest() {
+		driver.quit();
 	}
 }

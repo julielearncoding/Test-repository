@@ -47,10 +47,15 @@ public class AccountRegSuccessfullyPage {
 		return getData(10, 2);
 	}
 
-	public Object[][] getRegisteredAccountDetails() {
-		Object[][] data = null;
-		data[0][1] = getCustomerId();
-		data[0][2] = getCustomerName();
+	public String[] getRegisteredAccountDetails() {
+		String[] data = new String[7];
+		data[0] = this.getAccountId();
+		data[1] = this.getCustomerId();
+		data[2] = this.getCustomerName();
+		data[3] = this.getEmail();
+		data[4] = this.getAccountType();
+		data[5] = this.getDateOfOpening();
+		data[6] = this.getCurrentAmount();
 		return data;
 	}
 
