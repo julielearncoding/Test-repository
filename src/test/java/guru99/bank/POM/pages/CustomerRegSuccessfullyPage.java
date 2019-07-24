@@ -1,5 +1,7 @@
 package guru99.bank.POM.pages;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,18 +63,18 @@ public class CustomerRegSuccessfullyPage {
 		return getData(13, 2);
 	}
 
-	public String[] getRegisteredCustomerDetails() {
-		String[] data = new String[10];
-		data[0] = this.getCustomerId();
-		data[1] = this.getCustomerName();
-		data[2] = this.getGender();
-		data[3] = this.getBirthdate();
-		data[4] = this.getAddress();
-		data[5] = this.getCity();
-		data[6] = this.getState();
-		data[7] = this.getPIN();
-		data[8] = this.getMobileNumber();
-		data[9] = this.getEmail();
+	public ArrayList getRegisteredCustomerDetails() {
+		ArrayList data = new ArrayList();
+		data.add(this.getCustomerId());
+		data.add(this.getCustomerName());
+		data.add(this.getGender());
+		data.add(this.getBirthdate());
+		data.add(this.getAddress());
+		data.add(this.getCity());
+		data.add(this.getState());
+		data.add(this.getPIN());
+		data.add(this.getMobileNumber());
+		data.add(this.getEmail());
 		return data;
 	}
 }

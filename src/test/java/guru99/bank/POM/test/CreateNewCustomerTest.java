@@ -1,7 +1,5 @@
 package guru99.bank.POM.test;
 
-import java.util.Arrays;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -44,7 +42,7 @@ public class CreateNewCustomerTest {
 	@DataProvider
 	public static Object[][] customerDetails() {
 		return new Object[][] { { "customerName", "female", "01/01/1984", "address", "city", "state", "123456",
-				"0909123456", "tinklebell15@gmail.com", "123456" } };
+				"0909123456", "tinklebell16@gmail.com", "123456" } };
 	}
 
 	@Test()
@@ -64,7 +62,7 @@ public class CreateNewCustomerTest {
 				CustomerRegSuccessfullyPage.class);
 
 		System.out.println(customerSuccessful.getSuccessfulMessage());
-		System.out.println(Arrays.toString(customerSuccessful.getRegisteredCustomerDetails()));
+		System.out.println((customerSuccessful.getRegisteredCustomerDetails()));
 	}
 
 	@After

@@ -1,5 +1,7 @@
 package guru99.bank.POM.test;
 
+import java.util.Arrays;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +21,7 @@ import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @RunWith(DataProviderRunner.class)
-public class CreateNewAccountTest {
+public class CreateNewAccountTest_DEBUGGING {
 
 	WebDriver driver;
 
@@ -57,7 +59,7 @@ public class CreateNewAccountTest {
 		AccountRegSuccessfullyPage accountSuccessful = PageFactory.initElements(driver,
 				AccountRegSuccessfullyPage.class);
 		System.out.println(accountSuccessful.getSuccessfulMessage());
-		System.out.println((accountSuccessful.getRegisteredAccountDetails()));
+		System.out.println(Arrays.toString(accountSuccessful.getRegisteredAccountDetails()));
 
 	}
 

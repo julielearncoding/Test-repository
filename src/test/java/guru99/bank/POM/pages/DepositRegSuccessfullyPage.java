@@ -1,5 +1,7 @@
 package guru99.bank.POM.pages;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,14 +45,14 @@ public class DepositRegSuccessfullyPage {
 		return getData(23, 2);
 	}
 
-	public String[] getRegisteredDepositDetails() {
-		String[] data = new String[6];
-		data[0] = this.getTransactionId();
-		data[1] = this.getAccountNo();
-		data[2] = this.getAmountCredited();
-		data[3] = this.getTypeOfTransaction();
-		data[4] = this.getDescription();
-		data[5] = this.getCurrentBalance();
+	public ArrayList getRegisteredDepositDetails() {
+		ArrayList data = new ArrayList();
+		data.add(this.getTransactionId());
+		data.add(this.getAccountNo());
+		data.add(this.getAmountCredited());
+		data.add(this.getTypeOfTransaction());
+		data.add(this.getDescription());
+		data.add(this.getCurrentBalance());
 		return data;
 	}
 

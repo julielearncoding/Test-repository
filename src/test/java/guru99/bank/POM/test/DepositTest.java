@@ -1,7 +1,5 @@
 package guru99.bank.POM.test;
 
-import java.util.Arrays;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -59,12 +57,12 @@ public class DepositTest {
 		DepositRegSuccessfullyPage depositSuccessful = PageFactory.initElements(driver,
 				DepositRegSuccessfullyPage.class);
 		System.out.println(depositSuccessful.getSuccessfulMessage());
-		System.out.println(Arrays.toString(depositSuccessful.getRegisteredDepositDetails()));
+		System.out.println(depositSuccessful.getRegisteredDepositDetails());
 	}
 
 	@After
 	public void afterTest() {
-		// driver.quit();
+		driver.quit();
 	}
 
 }
