@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="guru99.bank.POM.test.CreateNewAccountTest" class="method navigator-link" hash-for-method="createNewAccount(1167, Current, 500)">createNewAccount(1167, Current, 500)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="guru99.bank.POM.test.CreateNewCustomerTest" class="method navigator-link" hash-for-method="createNewCustomer(customerName, female, 01/01/1984, address, city, state, 123456, 0909123456, tinklebell16@gmail.com, ...)">createNewCustomer(customerName, female, 01/01/1984, address, city, state, 123456, 0909123456, tinklebell16@gmail.com, ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="guru99.bank.POM.test.DepositTest" class="method navigator-link" hash-for-method="depositToAccount">depositToAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -130,25 +120,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">guru99.bank.POM.test.DepositTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="depositToAccount">
-                  </a> <!-- depositToAccount -->
-                  <span class="method-name">depositToAccount</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Method public void guru99.bank.POM.test.DepositTest.depositToAccount(java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : depositDetails
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">guru99.bank.POM.test.CreateNewCustomerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -163,8 +134,8 @@ Method public void guru99.bank.POM.test.DepositTest.depositToAccount(java.lang.S
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-OU8JFJA&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: edcca41e1660a7a7b3aa88c06cf4ef95
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c429f85309b71b38cec4ce0a163b19e
 *** Element info: {Using=css selector, value=#customer &gt; tbody}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -177,51 +148,10 @@ Session ID: edcca41e1660a7a7b3aa88c06cf4ef95
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
 	at guru99.bank.POM.pages.CustomerRegSuccessfullyPage.getData(CustomerRegSuccessfullyPage.java:17)
 	at guru99.bank.POM.pages.CustomerRegSuccessfullyPage.getSuccessfulMessage(CustomerRegSuccessfullyPage.java:23)
-	at guru99.bank.POM.test.CreateNewCustomerTest.createNewCustomer(CreateNewCustomerTest.java:52)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">guru99.bank.POM.test.CreateNewAccountTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createNewAccount(1167, Current, 500)">
-                  </a> <!-- createNewAccount(1167, Current, 500) -->
-                  <span class="method-name">createNewAccount</span>
-                  <span class="parameters">(1167, Current, 500)</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
-  (Session info: chrome=76.0.3809.100): Customer does not exist!!
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;DESKTOP-OU8JFJA&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: eeea9cbd1316524c1d57d0b6aadd572f
-*** Element info: {Using=css selector, value=#account &gt; tbody}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getData(AccountRegSuccessfullyPage.java:15)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getSuccessfulMessage(AccountRegSuccessfullyPage.java:21)
-	at guru99.bank.POM.test.CreateNewAccountTest.createNewAccount(CreateNewAccountTest.java:48)
+	at guru99.bank.POM.test.CreateNewCustomerTest.createNewCustomer(CreateNewCustomerTest.java:29)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -238,15 +168,9 @@ Session ID: eeea9cbd1316524c1d57d0b6aadd572f
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
-    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;guru99.bank.POM.test.CreateNewCustomerTest&quot;/&gt;
-      &lt;class name=&quot;guru99.bank.POM.test.CreateNewAccountTest&quot;/&gt;
-      &lt;class name=&quot;guru99.bank.POM.test.DepositTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -260,7 +184,7 @@ Session ID: eeea9cbd1316524c1d57d0b6aadd572f
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,24 +210,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createNewCustomer')
 data.setCell(0, 2, 'guru99.bank.POM.test.CreateNewCustomerTest')
-data.setCell(0, 3, 3852);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createNewAccount')
-data.setCell(1, 2, 'guru99.bank.POM.test.CreateNewAccountTest')
-data.setCell(1, 3, 2702);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'depositToAccount')
-data.setCell(2, 2, 'guru99.bank.POM.test.DepositTest')
-data.setCell(2, 3, 0);
+data.setCell(0, 3, 3632);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -329,60 +245,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewAccountTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewCustomerTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewCustomerTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">52987 ms</span>
-              </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.DepositTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">67030 ms</span>
-              </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewCustomerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createNewCustomer(customerName, female, 01/01/1984, address, city, state, 123456, 0909123456, tinklebell16@gmail.com, ...)</span>
-                <span class="method-start">92472 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewAccountTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createNewAccount(1167, Current, 500)</span>
-                <span class="method-start">96415 ms</span>
+                <span class="method-start">22916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">99410 ms</span>
-              </div> <!-- configuration-suite after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.CreateNewCustomerTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">100436 ms</span>
-              </div> <!-- configuration-suite after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">guru99.bank.POM.test.DepositTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">101650 ms</span>
+                <span class="method-start">26650 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

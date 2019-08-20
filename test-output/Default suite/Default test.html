@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 20 11:17:23 ICT 2019</td>
+<td>Started on:</td><td>Tue Aug 20 12:47:33 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3901 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4382 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='guru99.bank.POM.test.CreateNewAccountTest.createNewAccount()'><b>createNewAccount</b><br>Test class: guru99.bank.POM.test.CreateNewAccountTest<br>Parameters: 1167, Current, 500</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
-  (Session info: chrome=76.0.3809.100): Customer does not exist!!
+<td title='guru99.bank.POM.test.DepositTest.depositToAccount()'><b>depositToAccount</b><br>Test class: guru99.bank.POM.test.DepositTest<br>Parameters: 65827, 100, Deposit More</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=76.0.3809.100): Account does not exist
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-OU8JFJA&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f31d92419d6d723b13125733ef3ed40c
-*** Element info: {Using=css selector, value=#account &gt; tbody}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2bc093971a9e063aec8a79b9e4b595c6
+*** Element info: {Using=css selector, value=#deposit &gt; tbody}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -96,9 +96,9 @@ Session ID: f31d92419d6d723b13125733ef3ed40c
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getData(AccountRegSuccessfullyPage.java:15)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getSuccessfulMessage(AccountRegSuccessfullyPage.java:21)
-	at guru99.bank.POM.test.CreateNewAccountTest.createNewAccount(CreateNewAccountTest.java:48)
+	at guru99.bank.POM.pages.DepositRegSuccessfullyPage.getData(DepositRegSuccessfullyPage.java:15)
+	at guru99.bank.POM.pages.DepositRegSuccessfullyPage.getSuccessfulMessage(DepositRegSuccessfullyPage.java:21)
+	at guru99.bank.POM.test.DepositTest.depositToAccount(DepositTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,15 +124,15 @@ Session ID: f31d92419d6d723b13125733ef3ed40c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace487219656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace487219656'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
-  (Session info: chrome=76.0.3809.100): Customer does not exist!!
+</pre></div><a href='#' onClick='toggleBox("stack-trace1693540983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693540983'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: chrome=76.0.3809.100): Account does not exist
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-OU8JFJA&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f31d92419d6d723b13125733ef3ed40c
-*** Element info: {Using=css selector, value=#account &gt; tbody}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2bc093971a9e063aec8a79b9e4b595c6
+*** Element info: {Using=css selector, value=#deposit &gt; tbody}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -145,9 +145,9 @@ Session ID: f31d92419d6d723b13125733ef3ed40c
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getData(AccountRegSuccessfullyPage.java:15)
-	at guru99.bank.POM.pages.AccountRegSuccessfullyPage.getSuccessfulMessage(AccountRegSuccessfullyPage.java:21)
-	at guru99.bank.POM.test.CreateNewAccountTest.createNewAccount(CreateNewAccountTest.java:48)
+	at guru99.bank.POM.pages.DepositRegSuccessfullyPage.getData(DepositRegSuccessfullyPage.java:15)
+	at guru99.bank.POM.pages.DepositRegSuccessfullyPage.getSuccessfulMessage(DepositRegSuccessfullyPage.java:21)
+	at guru99.bank.POM.test.DepositTest.depositToAccount(DepositTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,8 +174,8 @@ Session ID: f31d92419d6d723b13125733ef3ed40c
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>guru99.bank.POM.test.CreateNewAccountTest@484970b0</td></tr>
+<td>4</td>
+<td>guru99.bank.POM.test.DepositTest@5ab9e72c</td></tr>
 </table><p>
 </body>
 </html>
