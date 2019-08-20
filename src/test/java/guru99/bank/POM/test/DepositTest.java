@@ -36,7 +36,7 @@ public class DepositTest {
 		driver.get("http://demo.guru99.com/v4/");
 
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		loginPage.login("mngr210803", "ugUzAbE");
+		loginPage.login("mngr217444", "asybypE");
 	}
 
 	@DataProvider
