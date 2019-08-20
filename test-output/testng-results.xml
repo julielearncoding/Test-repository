@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="4" total="7" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-20T05:59:49Z" name="Suite" finished-at="2019-08-20T05:59:52Z" duration-ms="3691">
+  <suite started-at="2019-08-20T06:07:42Z" name="Suite" finished-at="2019-08-20T06:07:47Z" duration-ms="5277">
     <groups>
     </groups>
-    <test started-at="2019-08-20T05:59:49Z" name="Test" finished-at="2019-08-20T05:59:52Z" duration-ms="3691">
+    <test started-at="2019-08-20T06:07:42Z" name="Test" finished-at="2019-08-20T06:07:47Z" duration-ms="5277">
+      <class name="guru99.bank.POM.test.CreateNewAccountTest">
+        <test-method signature="createNewAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:guru99.bank.POM.test.CreateNewAccountTest@54a7079e]" started-at="2019-08-20T06:07:47Z" name="createNewAccount" data-provider="accountDetails" finished-at="2019-08-20T06:07:47Z" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1167]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Current]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at guru99.bank.POM.pages.NavigationPage.navigateTo(NavigationPage.java:33)
+at guru99.bank.POM.test.CreateNewAccountTest.createNewAccount(CreateNewAccountTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAccount -->
+      </class> <!-- guru99.bank.POM.test.CreateNewAccountTest -->
       <class name="guru99.bank.POM.test.CreateNewCustomerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4470f8a6]" started-at="2019-08-20T05:59:26Z" name="beforeTest" finished-at="2019-08-20T05:59:49Z" duration-ms="22872" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4310d43]" started-at="2019-08-20T06:07:14Z" name="beforeTest" finished-at="2019-08-20T06:07:42Z" duration-ms="28261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="createNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4470f8a6]" started-at="2019-08-20T05:59:49Z" name="createNewCustomer" data-provider="customerDetails" finished-at="2019-08-20T05:59:52Z" duration-ms="3632" status="FAIL">
+        <test-method signature="createNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4310d43]" started-at="2019-08-20T06:07:42Z" name="createNewCustomer" data-provider="customerDetails" finished-at="2019-08-20T06:07:47Z" duration-ms="4844" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -71,8 +130,8 @@
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c429f85309b71b38cec4ce0a163b19e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bbcf5eff5c48131311ef25d138f39c68
 *** Element info: {Using=css selector, value=#customer > tbody}]]>
             </message>
             <full-stacktrace>
@@ -81,8 +140,8 @@ Session ID: 5c429f85309b71b38cec4ce0a163b19e
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c429f85309b71b38cec4ce0a163b19e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bbcf5eff5c48131311ef25d138f39c68
 *** Element info: {Using=css selector, value=#customer > tbody}
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -130,11 +189,70 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCustomer -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4470f8a6]" started-at="2019-08-20T05:59:52Z" name="afterTest" finished-at="2019-08-20T05:59:53Z" duration-ms="899" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:guru99.bank.POM.test.CreateNewCustomerTest@4310d43]" started-at="2019-08-20T06:07:48Z" name="afterTest" finished-at="2019-08-20T06:07:49Z" duration-ms="910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- guru99.bank.POM.test.CreateNewCustomerTest -->
+      <class name="guru99.bank.POM.test.DepositTest">
+        <test-method signature="depositToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:guru99.bank.POM.test.DepositTest@26e356f0]" started-at="2019-08-20T06:07:47Z" name="depositToAccount" data-provider="depositDetails" finished-at="2019-08-20T06:07:47Z" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[65827]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Deposit More]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at guru99.bank.POM.pages.NavigationPage.navigateTo(NavigationPage.java:35)
+at guru99.bank.POM.test.DepositTest.depositToAccount(DepositTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositToAccount -->
+      </class> <!-- guru99.bank.POM.test.DepositTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
