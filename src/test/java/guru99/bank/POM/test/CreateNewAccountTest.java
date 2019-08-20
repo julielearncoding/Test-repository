@@ -1,16 +1,12 @@
 package guru99.bank.POM.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-
-import com.tngtech.java.junit.dataprovider.DataProvider;
-import com.tngtech.java.junit.dataprovider.DataProviderRunner;
-import com.tngtech.java.junit.dataprovider.UseDataProvider;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import guru99.bank.POM.pages.AccountPage;
 import guru99.bank.POM.pages.AccountRegSuccessfullyPage;
@@ -18,12 +14,11 @@ import guru99.bank.POM.pages.LoginPage;
 import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@RunWith(DataProviderRunner.class)
 public class CreateNewAccountTest {
 
 	WebDriver driver;
 
-	@Before
+	@BeforeSuite
 	public void beforeTest() {
 		// Download the web driver executable
 		WebDriverManager.chromedriver().setup();
@@ -39,13 +34,7 @@ public class CreateNewAccountTest {
 		loginPage.login("mngr217444", "asybypE");
 	}
 
-	@DataProvider
-	public static Object[][] accountDetails() {
-		return new Object[][] { { "1167", "Current", "500" } };
-	}
-
-	@Test()
-	@UseDataProvider("accountDetails")
+	@Test(dataProvider = "accountDetails")
 	public void createNewAccount(String customerId, String accountType, String initialDeposit) {
 		// Navigate to Customer page
 		NavigationPage nav = PageFactory.initElements(driver, NavigationPage.class);
@@ -61,7 +50,12 @@ public class CreateNewAccountTest {
 
 	}
 
-	@After
+	@DataProvider
+	public static Object[][] accountDetails() {
+		return new Object[][] { { "1167", "Current", "500" } };
+	}
+	
+	@AfterSuite
 	public void afterTest() {
 		driver.quit();
 	}

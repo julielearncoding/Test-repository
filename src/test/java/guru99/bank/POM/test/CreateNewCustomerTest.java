@@ -1,16 +1,12 @@
 package guru99.bank.POM.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-
-import com.tngtech.java.junit.dataprovider.DataProvider;
-import com.tngtech.java.junit.dataprovider.DataProviderRunner;
-import com.tngtech.java.junit.dataprovider.UseDataProvider;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import guru99.bank.POM.pages.CustomerPage;
 import guru99.bank.POM.pages.CustomerRegSuccessfullyPage;
@@ -18,12 +14,11 @@ import guru99.bank.POM.pages.LoginPage;
 import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@RunWith(DataProviderRunner.class)
 public class CreateNewCustomerTest {
 
 	WebDriver driver;
 
-	@Before
+	@BeforeSuite
 	public void beforeTest() {
 		// Download the web driver executable
 		WebDriverManager.chromedriver().setup();
@@ -39,14 +34,7 @@ public class CreateNewCustomerTest {
 		loginPage.login("mngr217444", "asybypE");
 	}
 
-	@DataProvider
-	public static Object[][] customerDetails() {
-		return new Object[][] { { "customerName", "female", "01/01/1984", "address", "city", "state", "123456",
-				"0909123456", "tinklebell16@gmail.com", "123456" } };
-	}
-
-	@Test()
-	@UseDataProvider("customerDetails")
+	@Test(dataProvider = "customerDetails")
 	public void createNewCustomer(String customerName, String gender, String dateOfBirth, String address, String city,
 			String state, String pinNumber, String mobileNumber, String email, String password) {
 
@@ -65,7 +53,14 @@ public class CreateNewCustomerTest {
 		System.out.println((customerSuccessful.getRegisteredCustomerDetails()));
 	}
 
-	@After
+
+	@DataProvider
+	public static Object[][] customerDetails() {
+		return new Object[][] { { "customerName", "female", "01/01/1984", "address", "city", "state", "123456",
+				"0909123456", "tinklebell16@gmail.com", "123456" } };
+	}
+	
+	@AfterSuite
 	public void afterTest() {
 		driver.quit();
 	}

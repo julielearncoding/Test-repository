@@ -1,16 +1,13 @@
 package guru99.bank.POM.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
-import com.tngtech.java.junit.dataprovider.DataProviderRunner;
-import com.tngtech.java.junit.dataprovider.UseDataProvider;
 
 import guru99.bank.POM.pages.DepositPage;
 import guru99.bank.POM.pages.DepositRegSuccessfullyPage;
@@ -18,12 +15,11 @@ import guru99.bank.POM.pages.LoginPage;
 import guru99.bank.POM.pages.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@RunWith(DataProviderRunner.class)
 public class DepositTest {
 
 	WebDriver driver;
 
-	@Before
+	@BeforeSuite
 	public void beforeTest() {
 		// Download the web driver executable
 		WebDriverManager.chromedriver().setup();
@@ -39,13 +35,7 @@ public class DepositTest {
 		loginPage.login("mngr217444", "asybypE");
 	}
 
-	@DataProvider
-	public static Object[][] depositDetails() {
-		return new Object[][] { { "65827", "100", "Deposit More" } };
-	}
-
-	@Test
-	@UseDataProvider("depositDetails")
+	@Test (dataProvider = "depositDetails")
 	public void depositToAccount(String accountNumber, String amount, String description) {
 		// Navigate to Customer page
 		NavigationPage nav = PageFactory.initElements(driver, NavigationPage.class);
@@ -60,7 +50,12 @@ public class DepositTest {
 		System.out.println(depositSuccessful.getRegisteredDepositDetails());
 	}
 
-	@After
+	@DataProvider
+	public static Object[][] depositDetails() {
+		return new Object[][] { { "65827", "100", "Deposit More" } };
+	}
+	
+	@AfterSuite
 	public void afterTest() {
 		driver.quit();
 	}
