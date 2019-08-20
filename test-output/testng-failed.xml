@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="guru99.bank.POM.test.DepositTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="depositToAccount"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- guru99.bank.POM.test.DepositTest -->
+      <class name="guru99.bank.POM.test.CreateNewCustomerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="createNewCustomer" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- guru99.bank.POM.test.CreateNewCustomerTest -->
+      <class name="guru99.bank.POM.test.CreateNewAccountTest">
+        <methods>
+          <include name="createNewAccount" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- guru99.bank.POM.test.CreateNewAccountTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
