@@ -7,13 +7,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="guru99.bank.POM.test.DepositTest">
-        <methods>
-          <include name="depositToAccount" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- guru99.bank.POM.test.DepositTest -->
       <class name="guru99.bank.POM.test.CreateNewCustomerTest">
         <methods>
           <include name="createNewCustomer" invocation-numbers="0"/>
@@ -21,13 +14,6 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- guru99.bank.POM.test.CreateNewCustomerTest -->
-      <class name="guru99.bank.POM.test.CreateNewAccountTest">
-        <methods>
-          <include name="createNewAccount" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- guru99.bank.POM.test.CreateNewAccountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

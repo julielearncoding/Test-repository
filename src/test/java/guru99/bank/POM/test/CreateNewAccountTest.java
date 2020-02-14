@@ -29,7 +29,7 @@ public class CreateNewAccountTest extends TestBase {
 
 	@DataProvider
 	public static Object[][] accountDetails() {
-		return new Object[][] { { "1167", "Current", "500" } };
+		return new Object[][] { { "31010", "Current", "500" } };
 	}
 
 }

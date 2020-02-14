@@ -10,7 +10,7 @@ import guru99.bank.POM.pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	@BeforeSuite
 	public void beforeTest() {
@@ -25,9 +25,10 @@ public class TestBase {
 		driver.get("http://demo.guru99.com/v4/");
 
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		loginPage.login("mngr217444", "asybypE");
+		loginPage.login("mngr245049", "rubuqeg");
 	}
 
+	
 	@AfterSuite
 	public void afterTest() {
 		driver.quit();

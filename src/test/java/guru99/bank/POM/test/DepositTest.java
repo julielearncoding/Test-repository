@@ -28,7 +28,7 @@ public class DepositTest extends TestBase {
 
 	@DataProvider
 	public static Object[][] depositDetails() {
-		return new Object[][] { { "65827", "100", "Deposit More" } };
+		return new Object[][] { { "75481", "100", "Deposit More" } };
 	}
 	
 }
