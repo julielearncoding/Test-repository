@@ -3,13 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="guru99.bank.POM.test.DepositTest">
+        <methods>
+          <include name="depositToAccount"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- guru99.bank.POM.test.DepositTest -->
       <class name="guru99.bank.POM.test.CreateNewAccountTest">
         <methods>
-          <include name="createNewAccount" invocation-numbers="0"/>
+          <include name="createNewAccount"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- guru99.bank.POM.test.CreateNewAccountTest -->
+      <class name="guru99.bank.POM.test.CreateNewCustomerTest">
+        <methods>
+          <include name="createNewCustomer"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- guru99.bank.POM.test.CreateNewCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
