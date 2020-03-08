@@ -3,27 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99.bank.POM.test.DepositTest">
+      <class name="com.w2a.rough.H002_Search_Flights_Only">
         <methods>
-          <include name="depositToAccount"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="H002_004_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAndDefault1Travellers"/>
         </methods>
-      </class> <!-- guru99.bank.POM.test.DepositTest -->
-      <class name="guru99.bank.POM.test.CreateNewAccountTest">
-        <methods>
-          <include name="createNewAccount"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- guru99.bank.POM.test.CreateNewAccountTest -->
-      <class name="guru99.bank.POM.test.CreateNewCustomerTest">
-        <methods>
-          <include name="createNewCustomer"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- guru99.bank.POM.test.CreateNewCustomerTest -->
+      </class> <!-- com.w2a.rough.H002_Search_Flights_Only -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
