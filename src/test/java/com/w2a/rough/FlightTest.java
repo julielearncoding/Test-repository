@@ -1,14 +1,14 @@
 package com.w2a.rough;
 
 import com.w2a.base.Page;
-import com.w2a.pages.actions.HomePage;
+import com.w2a.pages.actions.FlightHomePage;
 
 public class FlightTest {
 	public static void main(String[] args) throws InterruptedException {
 			
 		Page.initConfiguration();
 		
-		HomePage home = new HomePage(); 
+		FlightHomePage home = new FlightHomePage(); 
 		home.gotoFlights();
 
 		home.setNumberOfAdults(4);

@@ -3,7 +3,7 @@ package com.w2a.pages.locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageLocator {
+public class FlightHomePageLocator {
 
 	@FindBy(id = "tab-flight-tab-hp")
 	public WebElement tabFlights;

@@ -4,14 +4,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.w2a.base.Page;
-import com.w2a.pages.locators.HomePageLocator;
+import com.w2a.pages.locators.FlightHomePageLocator;
 
-public class HomePage extends Page {
+public class FlightHomePage extends Page {
 
-	public HomePageLocator home;
+	public FlightHomePageLocator home;
 
-	public HomePage() {
-		this.home = new HomePageLocator();
+	public FlightHomePage() {
+		this.home = new FlightHomePageLocator();
 		PageFactory.initElements(driver, this.home);
 	}
 
@@ -39,8 +39,8 @@ public class HomePage extends Page {
 			home.departDate.sendKeys(departDate);
 		}
 
-		home.returnDate.clear();
-		if (departDate != "") {
+		if (returnDate != "") {
+			Page.clearDate(home.returnDate);
 			home.returnDate.sendKeys(returnDate);
 		}
 

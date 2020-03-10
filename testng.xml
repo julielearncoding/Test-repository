@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-
-	<listeners>
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-	</listeners>
-	
-	<test thread-count="5" name="Test">
+<suite name="Search_Suite">
+	<test thread-count="5" name="Flight_Search_Test">
 		<classes>
-			<class name="guru99.bank.POM.test.CreateNewCustomerTest" />
-			<class name="guru99.bank.POM.test.CreateNewAccountTest" />
-			<class name="guru99.bank.POM.test.DepositTest" />
+			<class name="com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only" />
+			<class name="com.w2a.testcases.flights_search.FS001_002_Flights_Search_Only" />
+			<class name="com.w2a.testcases.flights_search.FS001_003_Flights_Search_Only" />
+			<class name="com.w2a.testcases.flights_search.FS001_004_Flights_Search_Only" />
+			<class name="com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only" />
+			<class name="com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only" />
 		</classes>
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
+
+	<test thread-count="5" name="Hotel_Search_Test">
+		<classes>
+			<class name="com.w2a.testcases.hotels_search.HS001_001_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_002_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_003_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_004_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_005_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_006_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_007_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_008_Hotels_Search_Only" />
+			<class name="com.w2a.testcases.hotels_search.HS001_009_Hotels_Search_Only" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite end -->
