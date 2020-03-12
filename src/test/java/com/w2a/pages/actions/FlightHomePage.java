@@ -1,5 +1,7 @@
 package com.w2a.pages.actions;
 
+import java.io.IOException;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -13,19 +15,6 @@ public class FlightHomePage extends Page {
 	public FlightHomePage() {
 		this.home = new FlightHomePageLocator();
 		PageFactory.initElements(driver, this.home);
-	}
-
-	public void gotoFlights() {
-		home.tabFlights.click();
-
-	}
-
-	public void gotoHotels() {
-
-	}
-
-	public void gotoFlightsAndHotels() {
-
 	}
 
 	public void bookAFlight(String from, String to, String departDate, String returnDate, int noOfAdults, int noOfChildren, int noOfInfants) {
@@ -50,7 +39,14 @@ public class FlightHomePage extends Page {
 		
 		setNumberOfInfants(noOfInfants);
 
-		home.searchButton.click();
+		home.flightSearchForm.submit();
+		
+		try {
+			Page.captureScreen();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public String getError() {
@@ -59,9 +55,8 @@ public class FlightHomePage extends Page {
 	}
 
 	public void setNumberOfAdults(int noOfAdults) {
-		home.travellers.click();
-
-		if (noOfAdults > 1 && noOfAdults <= 6) {
+		if (noOfAdults >= 2 && noOfAdults <= 6) {
+			home.travellers.click();
 			for (int adult = 1; adult < noOfAdults; adult++) {
 				home.adultsPlusIcon.click();
 			}

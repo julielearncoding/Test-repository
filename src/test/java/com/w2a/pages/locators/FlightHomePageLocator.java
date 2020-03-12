@@ -3,10 +3,7 @@ package com.w2a.pages.locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class FlightHomePageLocator {
-
-	@FindBy(id = "tab-flight-tab-hp")
-	public WebElement tabFlights;
+public class FlightHomePageLocator extends MainPageLocator {
 
 	// locator for flight booking
 	@FindBy(id = "flight-origin-hp-flight")
@@ -112,6 +109,9 @@ public class FlightHomePageLocator {
 	
 	@FindBy(className = "search-btn-col")
 	public WebElement searchButton;
+	
+	@FindBy(id = "gcw-flights-form-hp-flight")
+	public WebElement flightSearchForm;
 
 	// error header
 	@FindBy(css = "h5.alert-title.no-outline")

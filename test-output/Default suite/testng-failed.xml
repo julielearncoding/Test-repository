@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.w2a.testcases.hotels_search.HS001_008_Hotels_Search_Only">
+      <class name="com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only">
         <methods>
-          <include name="setUp"/>
-          <include name="HS001_008_searchByAllCriteriaWithAddOneMoreRoom" invocation-numbers="0"/>
+          <include name="FHS001_001_searchFlightsAndHotels" invocation-numbers="0"/>
           <include name="quitBrowser"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.w2a.testcases.hotels_search.HS001_008_Hotels_Search_Only -->
+      </class> <!-- com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

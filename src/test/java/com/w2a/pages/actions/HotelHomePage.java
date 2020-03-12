@@ -1,5 +1,7 @@
 package com.w2a.pages.actions;
 
+import java.io.IOException;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,11 +15,6 @@ public class HotelHomePage extends Page {
 	public HotelHomePage() {
 		this.home = new HotelHomePageLocator();
 		PageFactory.initElements(driver, home);
-
-	}
-
-	public void gotoHotels() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -54,7 +51,14 @@ public class HotelHomePage extends Page {
 				System.out.println(home.addMoreRoom.getText());
 			}
 		}
-//		home.searchButton.click();
+		home.searchButton.click();
+		
+		try {
+			Page.captureScreen();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
