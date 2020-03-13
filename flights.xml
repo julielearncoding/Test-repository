@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Search_Suite">
-	<test thread-count="5" name="Flight_Search_Test">
+<suite name="Flight_Search_Suite">
+	<test name="Flight_Search_Test">
 		<classes>
 			<class
 				name="com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only" />
@@ -15,8 +15,9 @@
 				name="com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only" />
 			<class
 				name="com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only" />
+				<class
+				name="com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only" />
 		</classes>
 	</test>
-
 
 </suite> <!-- Suite end -->

@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-12T17:59:08Z" name="Default suite" finished-at="2020-03-12T17:59:55Z" duration-ms="47489">
+  <suite started-at="2020-03-13T06:31:37Z" name="Default suite" finished-at="2020-03-13T06:32:24Z" duration-ms="47207">
     <groups>
     </groups>
-    <test started-at="2020-03-12T17:59:08Z" name="Default test" finished-at="2020-03-12T17:59:55Z" duration-ms="47489">
-      <class name="com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-12T17:59:08Z" name="setUp" finished-at="2020-03-12T17:59:36Z" duration-ms="28430" status="PASS">
+    <test started-at="2020-03-13T06:31:37Z" name="Default test" finished-at="2020-03-13T06:32:24Z" duration-ms="47207">
+      <class name="com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@2f54a33d]" started-at="2020-03-13T06:31:37Z" name="setUp" finished-at="2020-03-13T06:32:09Z" duration-ms="32166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FHS001_001_searchFlightsAndHotels(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, boolean, boolean)[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-12T17:59:36Z" name="FHS001_001_searchFlightsAndHotels" data-provider="FHS001_001" finished-at="2020-03-12T17:59:55Z" duration-ms="18966" status="PASS">
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int)[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@2f54a33d]" started-at="2020-03-13T06:32:09Z" name="FS001_001_searchFlightsValid" data-provider="FS001_001" finished-at="2020-03-13T06:32:22Z" duration-ms="12425" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tan Son Nhat]]>
+                <![CDATA[SGN]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Bangkok]]>
+                <![CDATA[DAD]]>
               </value>
             </param>
             <param index="2">
@@ -30,43 +30,33 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[29/03/2020]]>
+                <![CDATA[27/04/2020]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[0]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[0]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[false]]>
+                <![CDATA[2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FHS001_001_searchFlightsAndHotels -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-12T17:59:55Z" name="quitBrowser" finished-at="2020-03-12T17:59:55Z" duration-ms="3" status="PASS">
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@2f54a33d]" started-at="2020-03-13T06:32:22Z" name="quitBrowser" finished-at="2020-03-13T06:32:24Z" duration-ms="2565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Hotels_Search_Only -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

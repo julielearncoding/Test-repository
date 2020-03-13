@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>guru99.bank.POM</groupId>
-	<artifactId>guru99.bank.POM</artifactId>
+	<groupId>expedia.co.in</groupId>
+	<artifactId>expedia.co.in</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
@@ -52,8 +52,8 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
-		
-				<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
+
+		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
 		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
@@ -66,9 +66,26 @@
 			<artifactId>guice</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-	
-		
+
+
 	</dependencies>
-	
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<testFailureIgnore> false </testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>master_suite.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 
 </project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Car_Hire_Suite">
+	<test name="Car_Hire_Search_Test">
+		<classes>
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_001_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_002_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_003_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_004_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_005_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_006_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_007_Car_Hire_Search_Only" />
+			<class
+				name="com.w2a.testcases.car_hire_search.CHS001_008_Car_Hire_Search_Only" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite end -->
