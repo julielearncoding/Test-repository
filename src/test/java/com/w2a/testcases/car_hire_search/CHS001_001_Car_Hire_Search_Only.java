@@ -21,6 +21,6 @@ public class CHS001_001_Car_Hire_Search_Only extends SetupAndTearDown {
 	// rule: current time must 2 hrs before current
 	@DataProvider(name = "CHS001_001")
 	public Object[][] searchData() {
-		return new Object[][] { { "Ho Chi Minh", "Da Lat", "27/03/2020", "10:30", "29/03/2020", "10:30", "36" } };
+		return new Object[][] { { "Ho Chi Minh", "Da Lat", "27/03/2020", "10:30", "29/03/2020", "00:00", "" } };
 	}
 }

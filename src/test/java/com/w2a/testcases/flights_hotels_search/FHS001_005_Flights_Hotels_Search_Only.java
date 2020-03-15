@@ -7,10 +7,10 @@ import com.w2a.base.Page;
 import com.w2a.base.SetupAndTearDown;
 import com.w2a.pages.actions.FlightHotelHomePage;
 
-public class FHS001_002_Flights_Hotels_Search_Only extends SetupAndTearDown {
+public class FHS001_005_Flights_Hotels_Search_Only extends SetupAndTearDown {
 
-	@Test(dataProvider = "FHS001_002")
-	public void FHS001_002_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAnd7TravellersDirectFlight(
+	@Test(dataProvider = "FHS001_005")
+	public void FHS001_005_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAnd7TravellersDirectFlight(
 			String from, String to, String departDate, String returnDate, int noOfAdults, int noOfChildren,
 			int noOfInfants, int noOfRooms, boolean isDirectFlightOnly, boolean needFlight) {
 
@@ -19,8 +19,8 @@ public class FHS001_002_Flights_Hotels_Search_Only extends SetupAndTearDown {
 				,isDirectFlightOnly, needFlight); 
 	}
 
-	@DataProvider(name = "FHS001_002")
+	@DataProvider(name = "FHS001_005")
 	public Object[][] searchData() {
-		return new Object[][] { {"SGN", "DAD", "27/03/2020", "27/04/2020", 1, 0, 0, 0 , true, false } };
+		return new Object[][] { {"SGN", "DAD", "27/03/2020", "27/04/2020", 1, 5, 0, 0 , true, false } };
 	}
 }

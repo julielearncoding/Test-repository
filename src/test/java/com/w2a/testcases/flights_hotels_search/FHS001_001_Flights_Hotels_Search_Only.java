@@ -12,15 +12,15 @@ public class FHS001_001_Flights_Hotels_Search_Only extends SetupAndTearDown {
 	//Test is OK
 	@Test(dataProvider = "FHS001_001")
 	public void FHS001_001_searchFlightsAndHotels(String from, String to, String departDate, String returnDate,
-			int noOfAdults, int noOfChildren, int noOfInfants, boolean isDirectFlightOnly, boolean needFlight) {
+			int noOfAdults, int noOfChildren, int noOfInfants, int noOfRooms, boolean isDirectFlightOnly, boolean needFlight) {
 
 		FlightHotelHomePage home = Page.gotoFlightsHotels();
-		home.bookAFlightAndHotel(from, to, departDate, returnDate, noOfAdults, noOfChildren, noOfInfants,
-				isDirectFlightOnly, needFlight); 
+		home.bookAFlightAndHotel(from, to, departDate, returnDate, noOfAdults, noOfChildren, noOfInfants, noOfRooms
+				,isDirectFlightOnly, needFlight); 
 	}
 
 	@DataProvider(name = "FHS001_001")
 	public Object[][] searchData() {
-		return new Object[][] { { "Tan Son Nhat", "Bangkok", "27/03/2020", "29/03/2020", 0, 0, 0, true, false } };
+		return new Object[][] { { "SGN", "DAD", "27/03/2020", "27/04/2020", 0, 0, 0, 0 , true, false } };
 	}
 }

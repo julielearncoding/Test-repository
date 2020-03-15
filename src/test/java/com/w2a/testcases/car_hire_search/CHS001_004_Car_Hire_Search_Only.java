@@ -20,6 +20,6 @@ public class CHS001_004_Car_Hire_Search_Only extends SetupAndTearDown {
 
 	@DataProvider(name = "CHS001_004")
 	public Object[][] searchData() {
-		return new Object[][] { { "Ho Chi Minh", "Da Lat", "27/03/2020", "10:30" ,"29/03/2020", "", "" } };
+		return new Object[][] { { "Ho Chi Minh", "Da Lat", "27/03/2020", "10:30" ,"29/03/2020", "", "100" } };
 	}
 }

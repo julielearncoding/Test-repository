@@ -17,7 +17,7 @@ public class FlightHotelHomePage extends Page {
 	}
 
 	public void bookAFlightAndHotel(String from, String to, String departDate, String returnDate, int noOfAdults,
-			int noOfChildren, int noOfInfants, boolean isDirectFlightOnly, boolean needFlight) {
+			int noOfChildren, int noOfInfants, int noOfRooms, boolean isDirectFlightOnly, boolean needFlight) {
 
 		if (from != "") {
 			home.leavingFrom.sendKeys(from);
@@ -32,15 +32,9 @@ public class FlightHotelHomePage extends Page {
 			Page.clearDate(home.returnDate);
 			home.returnDate.sendKeys(returnDate);
 		}
-//		if (noOfAdults) {
-//
-//		}
-//		if (noOfChildren) {
-//
-//		}
-//		if (noOfInfants) {
-//
-//		}
+
+		setTravellers(noOfAdults, noOfChildren, noOfInfants, noOfRooms);
+		
 		if (isDirectFlightOnly) {
 			home.directFlightCheckBox.click();
 		}
@@ -57,6 +51,37 @@ public class FlightHotelHomePage extends Page {
 			e.printStackTrace();
 		}
 	}
+
+		private void setTravellers(int noOfAdults, int noOfChildren, int noOfInfants, int noOfRooms) {
+			if (noOfAdults > 1 || noOfChildren > 0 || noOfInfants > 0) {
+				home.travellers.click();
+			}
+			setNumberOfAdults(noOfAdults);
+			setNumberOfChildren(noOfChildren);
+			setNumberOfInfants(noOfInfants);
+			setNumberOfRooms(noOfRooms);
+		}
+
+		private void setNumberOfRooms(int noOfRooms) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		private void setNumberOfAdults(int noOfAdults) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		private void setNumberOfChildren(int noOfChildren) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		private void setNumberOfInfants(int noOfInfants) {
+			// TODO Auto-generated method stub
+			
+		}
+		
 
 //	public void gotoFlightsHotels() {
 //		home.flightsHotelsTabBtn.click();

@@ -25,6 +25,8 @@ public class FlightHotelHomePageLocator extends MainPageLocator {
 	
 	@FindBy (id = "gcw-packages-form-hp-package")
 	public WebElement flightsHotelsForm;
+
+	public WebElement travellers;
 	
 	
 }
