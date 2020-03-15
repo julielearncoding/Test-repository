@@ -39,8 +39,6 @@ public class HotelHomePageLocator {
 	
 	@FindBy (xpath = "//li[@class='open']//a[text()='Add another room']")
 	public WebElement addMoreRoom;
-	
-	
 
 	/* travellers locators end */
 

@@ -2,7 +2,6 @@ package com.w2a.pages.actions;
 
 import java.io.IOException;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.w2a.base.Page;
@@ -22,7 +21,7 @@ public class HotelHomePage extends Page {
 			int noOfRooms) {
 		if (to != "") {
 			home.destination.sendKeys(to);
-			home.destination.sendKeys(Keys.RETURN);
+			home.destination.click();
 		}
 		;
 
@@ -66,7 +65,7 @@ public class HotelHomePage extends Page {
 	}
 
 	public void setNoOfAdults(int noOfAdults) {
-		for (int adult = 1; adult < noOfAdults - 2; adult++) {
+		for (int adult = 1; adult <= noOfAdults - 2; adult++) {
 			home.adultsPlusIcon.click();
 		}
 	}

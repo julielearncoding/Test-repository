@@ -10,15 +10,15 @@ public class HS001_002_Hotels_Search_Only extends SetupAndTearDown {
 
 	@Test(dataProvider = "HS001_002")
 	public void HS001_002_searchByAllCriteriaWithAddOneMoreRoom(
-			String to, String departDate, String returnDate, int noOfAdults, int noOfChildren, int noOfRooms) {
+			String to, String checkinDate, String checkoutDate, int noOfAdults, int noOfChildren, int noOfRooms) {
 
 		HotelHomePage home = new HotelHomePage();
-		home.bookAHotel(to, departDate, returnDate, noOfAdults, noOfChildren, noOfRooms);
+		home.bookAHotel(to, checkinDate, checkoutDate, noOfAdults, noOfChildren, noOfRooms);
 		
 	}
 
 	@DataProvider(name = "HS001_002")
 	public Object[][] searchData() {
-		return new Object[][] { { "Ho Chi Minh", "", "", 3, 3, 2 } };
+		return new Object[][] { { "Wellington, New Zealand", "27/03/2020", "29/03/2020", 1, 0, 0  } };
 	}
 }

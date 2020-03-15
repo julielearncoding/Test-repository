@@ -10,16 +10,16 @@ import com.w2a.pages.actions.HotelHomePage;
 public class HS001_003_Hotels_Search_Only extends SetupAndTearDown {
 
 	@Test(dataProvider = "HS001_003")
-	public void HS001_003_searchByDestinationOnly(String to, String departDate, String returnDate, int noOfAdults,
+	public void HS001_003_searchByDestinationOnly(String to, String checkinDate, String checkoutDate, int noOfAdults,
 			int noOfChildren, int noOfRooms) {
 
 		HotelHomePage home = Page.gotoHotels();
-		home.bookAHotel(to, departDate, returnDate, noOfAdults, noOfChildren, noOfRooms);
+		home.bookAHotel(to, checkinDate, checkoutDate, noOfAdults, noOfChildren, noOfRooms);
 
 	}
 
 	@DataProvider(name = "HS001_003")
 	public Object[][] searchData() {
-		return new Object[][] { { "Ho Chi Minh City", "", "", 0, 0, 1 } };
+		return new Object[][] { { "Wellington, New Zealand", "27/03/2020", "29/03/2020", 14, 0, 0 } };
 	}
 }
