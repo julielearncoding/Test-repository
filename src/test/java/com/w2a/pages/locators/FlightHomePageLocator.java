@@ -129,4 +129,16 @@ public class FlightHomePageLocator extends MainPageLocator {
 	@FindBy(css = "ul.validation-alert-list > li:nth-child(3) > a")
 	public WebElement errorReturnDate;
 	
+	@FindBy (id="flight-add-hotel-checkbox-hp-flight")
+	public WebElement addHotel;
+	
+	@FindBy (id = "flight-hotel-checkin-hp-flight")
+	public WebElement checkinDateFlightHotel;
+
+	@FindBy (id="flight-hotel-checkout-hp-flight")
+	public WebElement checkoutDateFlightHotel;
+	
+	@FindBy (xpath = "//*[@id='traveler-selector-hp-flight-fh']")
+	public WebElement travellersFlightHotel;
+	
 }

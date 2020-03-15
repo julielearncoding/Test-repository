@@ -12,7 +12,7 @@ import com.w2a.pages.actions.FlightHomePage;
 public class FS001_005_Flights_Search_Only extends SetupAndTearDown {
 	
 	//Test is OK
-	@Test(dataProvider = "S001_005")
+	@Test(dataProvider = "FS001_005")
 	public void FS001_003_searchFlightsNoReturnDate(String from, String to, String departDate, String returnDate,
 			int noOfAdults, int noOfChildren, int noOfInfants) {
 
@@ -21,9 +21,9 @@ public class FS001_005_Flights_Search_Only extends SetupAndTearDown {
 	
 	}
 	
-	@DataProvider(name = "S001_005")
+	@DataProvider(name = "FS001_005")
 	public Object[][] searchData() {
-		return new Object[][] { {"SGN", "DAD", "27/03/2020", "",1,0,0} };
+		return new Object[][] { {"SGN", "DAD", "27/03/2020", "27/04/2020",1,5,0} };
 	}
 
 }

@@ -46,5 +46,8 @@ public class HotelHomePageLocator {
 
 	@FindBy (xpath ="//button[@class='btn-primary btn-action  gcw-submit']")
 	public WebElement searchButton;
+	
+	@FindBy (id = "gcw-hotel-form-hp-hotel")
+	public WebElement hotelSearchForm;
 
 }

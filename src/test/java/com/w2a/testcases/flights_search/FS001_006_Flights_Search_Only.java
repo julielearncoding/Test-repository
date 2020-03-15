@@ -21,7 +21,7 @@ public class FS001_006_Flights_Search_Only extends SetupAndTearDown {
 
 	@DataProvider(name = "FS001_006")
 	public Object[][] searchData() {
-		return new Object[][] { { "SGN", "DAD", "27/03/2020", "", 1, 0, 0 } };
+		return new Object[][] { { "SGN", "DAD", "27/03/2020", "27/04/2020", 1, 7, 0 } };
 	}
 
 }

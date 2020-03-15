@@ -19,6 +19,6 @@ public class HS001_002_Hotels_Search_Only extends SetupAndTearDown {
 
 	@DataProvider(name = "HS001_002")
 	public Object[][] searchData() {
-		return new Object[][] { { "SGN", "", "", 1, 0, 4 } };
+		return new Object[][] { { "Ho Chi Minh", "", "", 3, 3, 2 } };
 	}
 }

@@ -35,31 +35,19 @@ public class HotelHomePage extends Page {
 			Page.clearDate(home.checkOut);
 			home.checkOut.sendKeys(checkOutDate);
 		}
-		if (noOfAdults > 2) {
-			home.travellers.click();
-			setNoOfAdults(noOfAdults);
-		}
 
-		if (noOfChildren > 0) {
-			setNoOfChildren(noOfChildren);
-		}
+		setTravellers(noOfAdults, noOfChildren, noOfRooms);
 
-		if (noOfRooms > 1) {
-			home.travellers.click();
-			for (int room = 0; room < noOfRooms - 1; room++) {
-				home.addMoreRoom.click();
-				System.out.println(home.addMoreRoom.getText());
-			}
-		}
-		home.searchButton.click();
-		
-		try {
+		home.hotelSearchForm.submit();
+
+		try
+
+		{
 			Page.captureScreen();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	public char[] getError() {
@@ -67,8 +55,18 @@ public class HotelHomePage extends Page {
 		return null;
 	}
 
+	public void setTravellers(int noOfAdults, int noOfChildren, int noOfRooms) {
+		if (noOfAdults > 2 || noOfChildren > 0 || noOfRooms > 1)  {
+			home.travellers.click(); 
+			
+			setNoOfAdults(noOfAdults);
+			setNoOfChildren(noOfChildren);
+			setNumberOfRooms(noOfRooms);
+		}
+	}
+
 	public void setNoOfAdults(int noOfAdults) {
-		for (int adult = 1; adult <= noOfAdults - 2; adult++) {
+		for (int adult = 1; adult < noOfAdults - 2; adult++) {
 			home.adultsPlusIcon.click();
 		}
 	}
@@ -79,4 +77,9 @@ public class HotelHomePage extends Page {
 		}
 	}
 
+	private void setNumberOfRooms(int noOfRooms) {
+		for (int room = 1; room <= noOfRooms - 1; room++) {
+			home.addMoreRoom.click();
+		}
+	}
 }

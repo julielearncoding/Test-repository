@@ -17,7 +17,10 @@ public class FlightHomePage extends Page {
 		PageFactory.initElements(driver, this.home);
 	}
 
-	public void bookAFlight(String from, String to, String departDate, String returnDate, int noOfAdults, int noOfChildren, int noOfInfants) {
+	public void bookAFlight(String from, String to, String departDate, String returnDate, int noOfAdults,
+			int noOfChildren, int noOfInfants) {
+
+		/* enter flight info */
 		if (from != "") {
 			home.flightFrom.sendKeys(from);
 		}
@@ -33,20 +36,29 @@ public class FlightHomePage extends Page {
 			home.returnDate.sendKeys(returnDate);
 		}
 
-		setNumberOfAdults(noOfAdults);
-		
-		setNumberOfChildren(noOfChildren);
-		
-		setNumberOfInfants(noOfInfants);
+		setTravellers(noOfAdults, noOfChildren, noOfInfants);
 
+		/* enter flight info finished */
+
+		// submit a search
 		home.flightSearchForm.submit();
-		
+
 		try {
 			Page.captureScreen();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	private void setTravellers(int noOfAdults, int noOfChildren, int noOfInfants) {
+		if (noOfAdults > 1 || noOfChildren > 0 || noOfInfants > 0) {
+			home.travellers.click();
+		}
+		setNumberOfAdults(noOfAdults);
+		setNumberOfChildren(noOfChildren);
+		setNumberOfInfants(noOfInfants);
+
 	}
 
 	public String getError() {
@@ -56,7 +68,6 @@ public class FlightHomePage extends Page {
 
 	public void setNumberOfAdults(int noOfAdults) {
 		if (noOfAdults >= 2 && noOfAdults <= 6) {
-			home.travellers.click();
 			for (int adult = 1; adult < noOfAdults; adult++) {
 				home.adultsPlusIcon.click();
 			}
@@ -92,7 +103,8 @@ public class FlightHomePage extends Page {
 	}
 
 	public String getTravellersValue() {
-		return home.travellers.getText(); //the locate travellers got too big, need factor to get inner string i.e. 6 adults, 12 children
+		return home.travellers.getText(); // the locate travellers got too big, need factor to get inner string i.e. 6
+											// adults, 12 children
 	}
 
 	public void setChildAge(int childAgeId, String childAgeValue) {
@@ -133,4 +145,58 @@ public class FlightHomePage extends Page {
 
 		infantAgeSelect.selectByVisibleText(infantAgeValue);
 	}
+
+	public void bookAFlightWithHotel(String from, String to, String departDate, String returnDate, int noOfAdults,
+			int noOfChildren, int noOfInfants, boolean addHotel, String checkinDateFlightHotel,
+			String checkoutDateFlightHotel, int noOfAdultsHotel, int noOfChildrenHotel, int noOfRoomsHotel) {
+
+		/* enter flight info */
+		if (from != "") {
+			home.flightFrom.sendKeys(from);
+		}
+		if (to != "") {
+			home.flightDestination.sendKeys(to);
+		}
+		if (departDate != "") {
+			home.departDate.sendKeys(departDate);
+		}
+
+		if (returnDate != "") {
+			Page.clearDate(home.returnDate);
+			home.returnDate.sendKeys(returnDate);
+		}
+
+		setTravellers(noOfAdults, noOfChildren, noOfInfants);
+
+		/* enter flight info finished */
+
+		/* enter additional hotel info */
+		if (addHotel) {
+			home.addHotel.click();
+
+			if (checkinDateFlightHotel != "") {
+				Page.clearDate(home.checkinDateFlightHotel);
+				home.checkinDateFlightHotel.sendKeys(checkinDateFlightHotel);
+			}
+			if (checkoutDateFlightHotel != "") {
+				Page.clearDate(home.checkoutDateFlightHotel);
+				home.checkoutDateFlightHotel.sendKeys(checkoutDateFlightHotel);
+			}
+
+			setTravellers(noOfAdultsHotel, noOfChildrenHotel, noOfRoomsHotel);
+		}
+
+		/* enter additional hotel info finished */
+
+		// submit a search
+		home.flightSearchForm.submit();
+
+		try {
+			Page.captureScreen();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 }
