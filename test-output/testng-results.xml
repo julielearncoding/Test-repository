@@ -1,17 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-15T19:09:14Z" name="Default suite" finished-at="2020-03-15T19:09:55Z" duration-ms="40439">
+  <suite started-at="2020-03-17T06:31:47Z" name="Flight_Search_Suite" finished-at="2020-03-17T06:36:03Z" duration-ms="255534">
     <groups>
     </groups>
-    <test started-at="2020-03-15T19:09:14Z" name="Default test" finished-at="2020-03-15T19:09:55Z" duration-ms="40439">
-      <class name="com.w2a.testcases.flights_hotels_search.FHS001_009_Flights_Hotels_Search_Only">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_009_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-15T19:09:15Z" name="setUp" finished-at="2020-03-15T19:09:49Z" duration-ms="33977" status="PASS">
+    <test started-at="2020-03-17T06:31:47Z" name="Flight_Search_Test" finished-at="2020-03-17T06:36:03Z" duration-ms="255534">
+      <class name="com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only@28975c28]" started-at="2020-03-17T06:32:16Z" name="setUp" finished-at="2020-03-17T06:32:28Z" duration-ms="11647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FHS001_008_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAnd7TravellersDirectFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int, boolean, boolean)[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_009_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-15T19:09:49Z" name="FHS001_008_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAnd7TravellersDirectFlight" data-provider="FHS001_008" finished-at="2020-03-15T19:09:55Z" duration-ms="6382" status="PASS">
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only@28975c28]" started-at="2020-03-17T06:32:28Z" name="FS001_001_searchFlightsValid" data-provider="FS001_005" finished-at="2020-03-17T06:32:38Z" duration-ms="10587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SGN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DAD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27/03/2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27/04/2020]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[17]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only@28975c28]" started-at="2020-03-17T06:32:38Z" name="quitBrowser" finished-at="2020-03-17T06:32:39Z" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only@71c3b41]" started-at="2020-03-17T06:35:38Z" name="setUp" finished-at="2020-03-17T06:35:52Z" duration-ms="14397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only@71c3b41]" started-at="2020-03-17T06:35:52Z" name="FS001_001_searchFlightsValid" data-provider="FS001_009" finished-at="2020-03-17T06:36:02Z" duration-ms="9658" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,33 +156,815 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[6]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[true]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Please correct the errors below.]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[We are only able to book between 1 and 6 travellers. Please adjust the number of travellers for your search.]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FHS001_008_searchByDepartingAndDesitnationAndDepartingDateAndReturnDateAnd7TravellersDirectFlight -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_hotels_search.FHS001_009_Flights_Hotels_Search_Only@2f54a33d]" started-at="2020-03-15T19:09:55Z" name="quitBrowser" finished-at="2020-03-15T19:09:55Z" duration-ms="0" status="PASS">
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only@71c3b41]" started-at="2020-03-17T06:36:02Z" name="quitBrowser" finished-at="2020-03-17T06:36:03Z" duration-ms="1110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.w2a.testcases.flights_hotels_search.FHS001_009_Flights_Hotels_Search_Only -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@757acd7b]" started-at="2020-03-17T06:31:47Z" name="setUp" finished-at="2020-03-17T06:32:04Z" duration-ms="16267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@757acd7b]" started-at="2020-03-17T06:32:04Z" name="FS001_001_searchFlightsValid" data-provider="FS001_001" finished-at="2020-03-17T06:32:15Z" duration-ms="11231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SGN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DAD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27/03/2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/03/2020]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only@757acd7b]" started-at="2020-03-17T06:32:15Z" name="quitBrowser" finished-at="2020-03-17T06:32:16Z" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only@343570b7]" started-at="2020-03-17T06:33:02Z" name="setUp" finished-at="2020-03-17T06:34:07Z" duration-ms="64697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only@343570b7]" started-at="2020-03-17T06:34:07Z" name="FS001_001_searchFlightsValid" data-provider="FS001_007" finished-at="2020-03-17T06:34:42Z" duration-ms="35796" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SGN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DAD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27/03/2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27/04/2020]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Under 1]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Under 1]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93363b0f8d297e8886a404b5c8a6dc1b
+*** Element info: {Using=xpath, value=//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93363b0f8d297e8886a404b5c8a6dc1b
+*** Element info: {Using=xpath, value=//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at com.w2a.pages.actions.FlightsSearchResultPage.getSelectionSummary(FlightsSearchResultPage.java:17)
+at com.w2a.pages.actions.FlightHomePage.verifySuccessResults(FlightHomePage.java:289)
+at com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only.FS001_001_searchFlightsValid(FS001_007_Flights_Search_Only.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only@343570b7]" started-at="2020-03-17T06:34:42Z" name="quitBrowser" finished-at="2020-03-17T06:34:44Z" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_003_Flights_Search_Only">
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_003_Flights_Search_Only@574b560f]" started-at="2020-03-17T06:32:16Z" name="FS001_001_searchFlightsValid" data-provider="FS001_003" finished-at="2020-03-17T06:32:16Z" duration-ms="4" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 6,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 6,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_003_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_002_Flights_Search_Only">
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_002_Flights_Search_Only@36b4fe2a]" started-at="2020-03-17T06:32:16Z" name="FS001_001_searchFlightsValid" data-provider="FS001_002" finished-at="2020-03-17T06:32:16Z" duration-ms="6" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 1,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 1,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_002_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only@157853da]" started-at="2020-03-17T06:34:44Z" name="setUp" finished-at="2020-03-17T06:34:59Z" duration-ms="15000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only@157853da]" started-at="2020-03-17T06:34:59Z" name="FS001_001_searchFlightsValid" data-provider="FS001_008" finished-at="2020-03-17T06:35:36Z" duration-ms="37554" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SGN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DAD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27/03/2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27/04/2020]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Under 1]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Under 1]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5319efb2b7336938a1507e7cc4578abe
+*** Element info: {Using=xpath, value=//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-OU8JFJA', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5319efb2b7336938a1507e7cc4578abe
+*** Element info: {Using=xpath, value=//div[@id='advanced-options-container']//p/span[@class='secondary-playback-summary']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at com.w2a.pages.actions.FlightsSearchResultPage.getSelectionSummary(FlightsSearchResultPage.java:17)
+at com.w2a.pages.actions.FlightHomePage.verifySuccessResults(FlightHomePage.java:289)
+at com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only.FS001_001_searchFlightsValid(FS001_008_Flights_Search_Only.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only@157853da]" started-at="2020-03-17T06:35:36Z" name="quitBrowser" finished-at="2020-03-17T06:35:38Z" duration-ms="1316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_008_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_004_Flights_Search_Only">
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_004_Flights_Search_Only@ba54932]" started-at="2020-03-17T06:32:16Z" name="FS001_001_searchFlightsValid" data-provider="FS001_004" finished-at="2020-03-17T06:32:16Z" duration-ms="1" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 7,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: FS001_001_searchFlightsValid([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=int, declaredAnnotations=[]}, Parameter{index=5, type=int, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=int, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) SGN,(java.lang.String) DAD,(java.lang.String) 27/03/2020,(java.lang.String) 27/04/2020,(java.lang.Integer) 7,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.Integer) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_004_Flights_Search_Only -->
+      <class name="com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only@3943a2be]" started-at="2020-03-17T06:32:39Z" name="setUp" finished-at="2020-03-17T06:32:54Z" duration-ms="14265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FS001_001_searchFlightsValid(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only@3943a2be]" started-at="2020-03-17T06:32:54Z" name="FS001_001_searchFlightsValid" data-provider="FS001_006" finished-at="2020-03-17T06:33:01Z" duration-ms="6790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SGN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DAD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27/03/2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27/04/2020]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[17]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Please correct the errors below.]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[We are only able to book between 1 and 6 travellers. Please adjust the number of travellers for your search.]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FS001_001_searchFlightsValid -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only@3943a2be]" started-at="2020-03-17T06:33:01Z" name="quitBrowser" finished-at="2020-03-17T06:33:02Z" duration-ms="1415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only -->
+    </test> <!-- Flight_Search_Test -->
+  </suite> <!-- Flight_Search_Suite -->
 </testng-results>

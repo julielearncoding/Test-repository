@@ -51,22 +51,22 @@ public class FlightHomePageLocator extends MainPageLocator {
 	
 	/* child age */
 	@FindBy (id = "flight-age-select-1-hp-flight")
-	public WebElement chidAge1;
+	public WebElement chid1Age;
 	
 	@FindBy (id = "flight-age-select-2-hp-flight")
-	public WebElement chidAge2;
+	public WebElement chid2Age;
 	
 	@FindBy (id = "flight-age-select-3-hp-flight")
-	public WebElement chidAge3;
+	public WebElement chid3Age;
 	
 	@FindBy (id = "flight-age-select-4-hp-flight")
-	public WebElement chidAge4;
+	public WebElement chid4Age;
 	
 	@FindBy (id = "flight-age-select-5-hp-flight")
-	public WebElement chidAge5;
+	public WebElement chid5Age;
 	
 	@FindBy (id = "flight-age-select-6-hp-flight")
-	public WebElement chidAge6;
+	public WebElement chid6Age;
 	/* child age ends*/
 	/* children locator end*/
 	
@@ -85,22 +85,22 @@ public class FlightHomePageLocator extends MainPageLocator {
 
 	/* Infants Age locator */
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[1]/select")
-	public WebElement infantAge1;
+	public WebElement infant1Age;
 	
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[2]/select")
-	public WebElement infantAge2;
+	public WebElement infant2Age;
 	
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[3]/select")
-	public WebElement infantAge3;
+	public WebElement infant3Age;
 	
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[4]/select")
-	public WebElement infantAge4;
+	public WebElement infant4Age;
 	
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[5]/select")
-	public WebElement infantAge5;
+	public WebElement infant5Age;
 	
 	@FindBy (xpath = "//div[@id='traveler-selector-hp-flight']//div[@class='infants-wrapper']/div[2]/label[6]/select")
-	public WebElement infantAge6;	
+	public WebElement infant6Age;	
 	/* Infants Age locator end*/
 	/* Infants locator end*/
 	
@@ -114,8 +114,17 @@ public class FlightHomePageLocator extends MainPageLocator {
 	public WebElement flightSearchForm;
 
 	// error header
-	@FindBy(css = "h5.alert-title.no-outline")
+	@FindBy (css = "div.alert.alert-error.validation-alert")
+	public WebElement alertError;
+	
+	@FindBy(css = "h5.alert-title")
 	public WebElement alertTitle;
+	
+	@FindBy (xpath = "//ul[@class='validation-alert-list']/li[1]/a")
+	public WebElement alertTravellers;
+	
+	@FindBy (xpath = "//ul[@class='validation-alert-list']/li[2]/a")
+	public WebElement alertChildAge;
 
 	// error destination
 	@FindBy(css = "ul.validation-alert-list > li:nth-child(1) > a")
@@ -140,5 +149,7 @@ public class FlightHomePageLocator extends MainPageLocator {
 	
 	@FindBy (xpath = "//*[@id='traveler-selector-hp-flight-fh']")
 	public WebElement travellersFlightHotel;
+	
+
 	
 }

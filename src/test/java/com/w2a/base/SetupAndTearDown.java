@@ -12,7 +12,7 @@ public class SetupAndTearDown {
 
 	@AfterMethod
 	public void quitBrowser() {
-//		Page.quitBrowser();
+		Page.quitBrowser();
 	}
 
 }
