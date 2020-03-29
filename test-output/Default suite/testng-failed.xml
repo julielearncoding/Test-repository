@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only">
+      <class name="com.newtours.testcases.NT001_Login">
         <methods>
-          <include name="FS001_001_searchFlightsValid" invocation-numbers="0"/>
+          <include name="NT001_001_LoginSuccessfully" invocation-numbers="0"/>
           <include name="quitBrowser"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.w2a.testcases.flights_search.FS001_009_Flights_Search_Only -->
+      </class> <!-- com.newtours.testcases.NT001_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

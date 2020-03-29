@@ -1,66 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Search_Suite">
-	<test thread-count="5" name="Flight_Search_Test">
+<suite name="Login_Suite">
+	<test name="Login Successfully">
 		<classes>
-			<class
-				name="com.w2a.testcases.flights_search.FS001_001_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_search.FS001_002_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_search.FS001_003_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_search.FS001_004_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_search.FS001_005_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_search.FS001_006_Flights_Search_Only" />
-				<class
-				name="com.w2a.testcases.flights_search.FS001_007_Flights_Search_Only" />
+			<class name="com.newtours.testcases.NT001_LoginSuccessfully" />
 		</classes>
 	</test>
 
-	<test thread-count="5" name="Hotel_Search_Test">
+	<test name="Login UnSuccessfully">
 		<classes>
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_001_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_002_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_003_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_004_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_005_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_006_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_007_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_008_Hotels_Search_Only" />
-			<class
-				name="com.w2a.testcases.hotels_search.HS001_009_Hotels_Search_Only" />
+			<class name="com.newtours.testcases.NT001_LoginUnSuccessfully_BothBlank" />
+			<class name="com.newtours.testcases.NT001_LoginUnSuccessfully_WrongBoth" />
+			<class name="com.newtours.testcases.NT001_LoginUnSuccessfully_WrongPassword" />
+			<class name="com.newtours.testcases.NT001_LoginUnSuccessfully_WrongUsername" />
+			
 		</classes>
 	</test>
-
-	<test thread-count="5" name="Flight_Hotel_Search_Test">
-		<classes>
-			<class
-				name="com.w2a.testcases.flights_hotels_search.FHS001_001_Flights_Search_Only" />
-			<class
-				name="com.w2a.testcases.flights_hotels_search.FHS001_002_Flights_Search_Only" />
-		</classes>
-	</test>
-
-	<test thread-count="5" name="Holiday_Activities_Search_Test">
-		<classes>
-			<class
-				name="com.w2a.testcases.holiday_activities_search.HAS001_001_Holiday_Activities_Search_Only" />
-			<class
-				name="com.w2a.testcases.holiday_activities_search.HAS001_002_Holiday_Activities_Search_Only" />
-			<class
-				name="com.w2a.testcases.holiday_activities_search.HAS001_003_Holiday_Activities_Search_Only" />
-		</classes>
-	</test> <!-- Test -->
 
 </suite> <!-- Suite end -->
