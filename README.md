@@ -1,4 +1,4 @@
-# SET_Assessment
+# Shopee_QA_Assessment
 
 # How to run the project
 Software installation:
