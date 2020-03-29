@@ -17,10 +17,4 @@ Method 1: Run As TestNG Suite
 3. Expand project folder, right-click on master_suite.xml -> Run As -> TestNG Suite
 4. Check test-output folder, locate emailable-report.html and open it
 
-Method 2: Run As Maven test
-1. Open IDE (i.e. Eclipse)
-2. Import cloned project (choose Maven Existing Project)
-3. Right-click on project folder -> Run As -> Maven test
-4. Check test-output folder, locate emailable-report.html and open it
-
 
